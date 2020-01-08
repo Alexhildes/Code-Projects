@@ -17,7 +17,7 @@ firstQuery = 'update [dbo].[device] set '
 #Loads excel file - must be in the correct format
 bimData = load_workbook('.\\SQL Builder\\Source Excel Docs\\Assorted.xlsx')
 #Opens blank sql file
-with open('.\\SQL Builder\\Output SQL\\DCE UPS 2019.sql','w') as f:
+with open('.\\SQL Builder\\Output SQL\\Nagios Updates Pre 2020.sql','w') as f:
 
     activeSheet = bimData.active
     maxRows = activeSheet.max_row + 1

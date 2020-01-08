@@ -1,3 +1,4 @@
+
 magick convert -density 5 -trim "L02-Background.pdf" -quality 100 -flatten L02-0.png
 magick convert -density 10 -trim "L02-Background.pdf" -quality 100 -flatten L02-1.png
 magick convert -density 20 -trim "L02-Background.pdf" -quality 100 -flatten L02-2.png
