@@ -2,7 +2,7 @@ import pandas as pd
 import quandl
 import math
 import numpy as np
-from sklearn import preprocessing, cross_validation, svm
+from sklearn import preprocessing, svm
 from sklearn.linear_model import LinearRegression
 
 
@@ -21,9 +21,10 @@ print(str(forecast_out) + ' days')
 df['label'] = df[forecast_col].shift(-forecast_out)
 df.dropna(inplace=True)
 
-X = np.array(df.drop(['label']), 1)       #Features array, everything except 'label' column. Features are all in the inputs
-y = np.array(df.['label'])       #Labels
+X = np.array(df.drop(['label'], 1))       #Features array, everything except 'label' column. Features are all in the inputs
+y = np.array(df['label'])       #Labels
 
-X = preprocessing.scale(X)
+X = preprocessing.scale(X)      #Not sure why we are scaling things?
+y = np.array(df['label'])
 
-print(df.head())
+print(len(X), len(y))
