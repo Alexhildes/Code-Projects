@@ -5011,7 +5011,16 @@ SQL Builder/Source Excel Docs/Assorted.xlsx
 SQL Builder/Output SQL/SEC Updates 20200120.sql
 SQL Builder/Source Excel Docs/Assorted.xlsx
 SQL Builder/Output SQL/ICT Updates 20200124.sql
+<<<<<<< HEAD
 PCH/SQL Builder/Output SQL/DCE UPS 2019.sql
 PCH/SQL Builder/Output SQL/Nurse Call Updates 20190923.sql
 SQL/ReportsHead Stored Procedures Backup.sql
 PCH/SQL Builder/Source Excel Docs/Assorted.xlsx
+=======
+SQL Builder/Output SQL/Door Updates 20200205.sql
+SQL Builder/Output SQL/Door Updates 20200211.sql
+SQL Builder/Output SQL/ICT Updates 20200214.sql
+SQL Builder/Output SQL/Sec Updates 20200205.sql
+SQL Builder/Output SQL/Sec Updates 20200206.sql
+SQL Builder/Output SQL/TKI Duress Updates 20200217.sql
+>>>>>>> a7b01dac1455441df6c5581d84c15d59352397e5
