@@ -1,0 +1,18 @@
+DR7=fnDRGet(7)
+
+IF DR7=1 THEN
+    Counter = 1
+    WHILE Counter < 100
+    fnHRSet(272,10000)
+    Counter = Counter + 1
+    WEND
+    WHILE Counter < 200
+    fnHRSet(272,0)
+    Counter = Counter + 1
+    WEND
+
+ 
+ELSE
+    fnHRSet(272,0)
+
+ENDIF
