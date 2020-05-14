@@ -1,0 +1,3 @@
+Name,Path,Point Name,Alarm Ref,Description,Alarm message,Reset message,Category,Priority,Event Type Test,Loop
+FDT001001,/QE/Servers/BMS CNT0001/CNT0001 BN01/Application/KK FDS/Detectors,QE/Servers/BMS CNT0001/CNT0001 BN01/Application/KK FDS/Detectors/FDT001001,FDS.001,LB RIS B2 14A,FDS LB RIS B2 14A FDT001001 Alarm FD.001,FDS LB RIS B2 14A FDT001001 Alarm Reset FD.001,Critical Infrastructure,10,FIR_ALM,001
+FDT001002,/QE/Servers/BMS CNT0001/CNT0001 BN01/Application/KK FDS/Detectors,QE/Servers/BMS CNT0001/CNT0001 BN01/Application/KK FDS/Detectors/FDT001002,FDS.001,LB MM LOAD/DK Rec,FDS LB MM LOAD/DK Rec FDT001002 Alarm FD.001,FDS LB MM LOAD/DK Rec FDT001002 Alarm Reset FD.001,Critical Infrastructure,10,FIR_ALM,001
