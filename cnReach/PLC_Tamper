@@ -1,17 +1,23 @@
+'DR7 variable reading Modbus Discrete Register 7
 DR7=fnDRGet(7)
 
+'If Tamper ON
 IF DR7=1 THEN
+    'Counter used instead of Delay Block
     Counter = 1
     WHILE Counter < 100
+    'Analogue Pin 1 Mapped to Holding Register 272, 
+    '10000 microamps to Turn LED ON
     fnHRSet(272,10000)
     Counter = Counter + 1
     WEND
     WHILE Counter < 200
+    '0 microamps to Turn LED OFF
     fnHRSet(272,0)
     Counter = Counter + 1
     WEND
 
- 
+'If Tamper OFF 
 ELSE
     fnHRSet(272,0)
 

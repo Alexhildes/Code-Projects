@@ -2,6 +2,7 @@
 
 ## Purpose
 
+<<<<<<< HEAD
 Modbus Builder is intended to read Modbus TCP Registers from Cambium cnReach radios over TCP/IP.
 
 The intent is to use this to send information to a database and use Grafana to create a modern telemetry dashboad as an "IIOT" project.
@@ -16,3 +17,8 @@ The intent is to use this to send information to a database and use Grafana to c
 [Float Converter](https://www.h-schmidt.net/FloatConverter/IEEE754.html)
 
 [Dictionary Loop](https://stackoverflow.com/questions/45506910/best-way-to-loop-through-multiple-dictionaries-in-python)
+=======
+test git
+
+mac git commit test
+>>>>>>> 5df6c6771d6c4466a67b8fdcabe0a246badd55f4
