@@ -63,6 +63,18 @@ def read_float(client, address, number=1):
     else:
         return None
 
+def read_state(client, address):
+
+    #Connnect to each Client
+    c = ModbusClient(client, port=port_client, auto_open=True, debug=False)
+
+    reg = c.read_discrete_inputs(address)
+    
+    if reg:
+        return None
+    else:
+        return None
+        
 def write_data(measurement, location, device, radio, temperature, voltage, uptime):
      # Create the JSON data structure
         iso = time.ctime()
@@ -121,14 +133,15 @@ while True:
 
         #Reading discretes from the Registers and sending them to the database
         #try:
-        #    write_states("tblRadioAlarms",
-        #                clients["CnReach4"]['location'],
-        #                "cnReach4",
-        #                clients["CnReach4"]['location']
-#
-        #    
-        #    
-        #    )
+            
+
+            #write_states("tblRadioAlarms",
+            #            clients["CnReach4"]['location'],
+            #            "cnReach4",
+            #            clients["CnReach4"]['radio'],
+            #            alarm_message)
+
+            #)
 
         time.sleep(30)
     except KeyboardInterrupt:
